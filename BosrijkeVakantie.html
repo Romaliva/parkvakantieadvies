@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BosrijkeVakantie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Verwijst naar je bestaande CSS bestand -->
+<style>
+/* Nieuwe stijlen voor tekst */
+.item-info p {
+    font-size: 1rem; /* Aanpasbare tekstgrootte */
+    margin-bottom: 15px; /* Ruimte onder paragrafen */
+    text-align: justify; /* Tekst uitlijnen voor betere leesbaarheid */
+}
+
+/* Stijlen voor headers */
+.item-info h2 {
+    margin-top: 0; /* Verwijder bovenmarge */
+    color: #333; /* Kleur voor headers */
+    font-weight: bold; /* Vetgedrukte titels */
+}
+
+/* Media query voor kleinere schermen */
+@media screen and (max-width: 768px) {
+    .item-info p {
+        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('header.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: left;
+    padding-top: 30px; /* Pas aan voor verticale uitlijning */
+    padding-bottom: 30px; /* Pas aan voor verticale uitlijning */
+    padding-left: 50px; /* Pas aan voor horizontale uitlijning */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centreert de items horizontaal */
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-image a {
+    display: block; /* Zorgt ervoor dat de link de hele afbeelding bedekt */
+}
+
+.item-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.item-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.item-info .button {
+    display: inline-block;
+    background-color: #C0D7A6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.item-info .button:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .top-item {
+        flex-direction: column;
+    }
+    .item-image img {
+        width: 100%;
+        border-right: none;
+    }
+}
+</style>	
+	
+</head>
+<body>
+    <header class="header">
+        <h1>BosrijkeVakantie - ParkVakantieAdvies</h1>
+    </header>
+
+        <nav>
+         <div>
+
+          <a href="index.html">Home</a>
+          <a href="blog1.html">Blog</a>
+
+          <a href="overons1.html" class="active">Over Ons</a>
+        </div>
+   
+    </nav>
+<div class="content">
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/bos-en-duin/"target="_blank"><img src="bosduin.jpg" alt="Park 10"></a>
+        </div>
+        <div class="item-info">
+            <h2>10 Roompot Bos en Duin</h2>
+            <p>Gelegen in Oostkapelle, biedt dit park een combinatie van bos en duinlandschappen, ideaal voor liefhebbers van zowel het bos als de zee.</p>
+            <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/bos-en-duin/"target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.molecaten.nl/de-koerberg"target="_blank"><img src="bos2.jpg" alt="Park 9"></a>
+        </div>
+        <div class="item-info">
+            <h2>9 Molecaten Park De Koerberg</h2>
+            <p>Gelegen in Heerde, een kleinschalig park in de bossen van de Veluwe.</p>
+            <a href="https://www.molecaten.nl/de-koerberg"target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.landal.nl/parken/Miggelenberg?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20Miggelenberg%20Hoenderloo&utm_content=15641-OZDE3ROSJVWWC-77790643647263&msclkid=bfb3ff7d61d718cd2b149ad156a0598b" target="_blank"><img src="bos3.jpg" alt="Park 8"></a>
+        </div>
+        <div class="item-info">
+            <h2>8 Landal Miggelenberg</h2>
+            <p>Een park in Hoenderloo, dat zich onderscheidt door zijn ruimtelijke opzet en directe toegang tot de bossen van de Veluwe.</p>
+            <a href="https://www.landal.nl/parken/Miggelenberg?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20Miggelenberg%20Hoenderloo&utm_content=15641-OZDE3ROSJVWWC-77790643647263&msclkid=bfb3ff7d61d718cd2b149ad156a0598b" target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+	<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.beeksebergen.nl/?msclkid=a7fbf4e459d11f1f37cc91486e8277b3&utm_source=bing&utm_medium=cpc&utm_campaign=NL%20%7C%20AO%20%7C%20Search%20%7C%20Breed&utm_term=beekse%20bergen&utm_content=Beekse%20Bergen%20-%20Algemeen%20-%20Exact"target="_blank"><img src="Safaripark.jpg" alt="Park 7"></a>
+    </div>
+    <div class="item-info">
+        <h2>7 Beekse Bergen</h2>
+        <p>Niet alleen een safaripark, maar ook een vakantiepark in een natuurrijke omgeving in Hilvarenbeek.</p>
+        <a href="https://www.beeksebergen.nl/?msclkid=a7fbf4e459d11f1f37cc91486e8277b3&utm_source=bing&utm_medium=cpc&utm_campaign=NL%20%7C%20AO%20%7C%20Search%20%7C%20Breed&utm_term=beekse%20bergen&utm_content=Beekse%20Bergen%20-%20Algemeen%20-%20Exact"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 7 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.landal.nl/parken/Heideheuvel?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20Heideheuvel%20Beekbergen&utm_content=15641-637RQGF6LUX6M-78615277001630&msclkid=da33507c3d3c14e14ef435d00a1ddc32"target="_blank"><img src="bos4.jpg" alt="Park 6"></a>
+    </div>
+    <div class="item-info">
+        <h2>6 Landal Heideheuvel</h2>
+        <p>Gelegen in Beekbergen, dicht bij de Hoge Veluwe, perfect voor wandel- en fietsliefhebbers.</p>
+        <a href="https://www.landal.nl/parken/Heideheuvel?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20Heideheuvel%20Beekbergen&utm_content=15641-637RQGF6LUX6M-78615277001630&msclkid=da33507c3d3c14e14ef435d00a1ddc32"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 6 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_MD_vakantiepark-het-meerdal"target="_blank"><img src="bos5.jpg" alt="Park 5"></a>
+    </div>
+    <div class="item-info">
+        <h2>5 Center Parcs Het Meerdal</h2>
+        <p>Gelegen nabij America, in Limburg, met een groot aanbod aan activiteiten en een mooie bosrijke setting.</p>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_MD_vakantiepark-het-meerdal"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.roompot.nl/bestemmingen/nederland/gelderland/de-veluwse-hoevegaerde/"target="_blank"><img src="veluwe.jpg" alt="Park 4"></a>
+    </div>
+    <div class="item-info">
+        <h2>4 Landal De Veluwse Hoevegaerde</h2>
+        <p>Gelegen in Putten, op de Veluwe, ideaal voor natuurliefhebbers en rustzoekers</p>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/gelderland/de-veluwse-hoevegaerde/"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank"><img src="bos6.jpg" alt="Park 3"></a>
+    </div>
+    <div class="item-info">
+        <h2>3 Roompot Weerterbergen</h2>
+        <p>Een veelzijdig park in Weert, omringd door bossen en met een breed scala aan faciliteiten</p>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_EH_vakantiepark-de-eemhof"target="_blank"><img src="bos7.jpg" alt="Park 2"></a>
+    </div>
+    <div class="item-info">
+        <h2>2 Center Parcs De Eemhof</h2>
+        <p>Gelegen in Zeewolde, biedt een breed scala aan activiteiten, waaronder watersporten aan het Eemmeer.</p>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_EH_vakantiepark-de-eemhof"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.landal.nl/parken/het-vennenbos"target="_blank"><img src="bos8.jpg" alt="Park 1"></a>
+    </div>
+    <div class="item-info">
+        <h2>1 Landal Het Vennenbos</h2>
+        <p>Gelegen in Hapert, bekend om zijn subtropische zwemparadijs en mooie bosrijke omgeving</p>
+        <a href="https://www.landal.nl/parken/het-vennenbos"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+
+
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+       
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: info@parkvakantieadvies.nl</p>
+        </div>
+      
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>&copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9NodLv2KmTfdt-i9zumBteZlcIyMZld4",
+      authDomain: "parkvakantieadvies-19209.firebaseapp.com",
+      projectId: "parkvakantieadvies-19209",
+      storageBucket: "parkvakantieadvies-19209.appspot.com",
+      messagingSenderId: "807746942840",
+      appId: "1:807746942840:web:20a119e53384389ca07a8d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

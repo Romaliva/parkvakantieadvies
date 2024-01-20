@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BosrijkeVakantie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Verwijst naar je bestaande CSS bestand -->
+<style>
+/* Nieuwe stijlen voor tekst */
+.item-info p {
+    font-size: 1rem; /* Aanpasbare tekstgrootte */
+    margin-bottom: 15px; /* Ruimte onder paragrafen */
+    text-align: justify; /* Tekst uitlijnen voor betere leesbaarheid */
+}
+
+/* Stijlen voor headers */
+.item-info h2 {
+    margin-top: 0; /* Verwijder bovenmarge */
+    color: #333; /* Kleur voor headers */
+    font-weight: bold; /* Vetgedrukte titels */
+}
+
+/* Media query voor kleinere schermen */
+@media screen and (max-width: 768px) {
+    .item-info p {
+        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('header.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: left;
+    padding-top: 30px; /* Pas aan voor verticale uitlijning */
+    padding-bottom: 30px; /* Pas aan voor verticale uitlijning */
+    padding-left: 50px; /* Pas aan voor horizontale uitlijning */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centreert de items horizontaal */
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-image a {
+    display: block; /* Zorgt ervoor dat de link de hele afbeelding bedekt */
+}
+
+.item-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.item-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.item-info .button {
+    display: inline-block;
+    background-color: #C0D7A6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.item-info .button:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .top-item {
+        flex-direction: column;
+    }
+    .item-image img {
+        width: 100%;
+        border-right: none;
+    }
+}
+</style>	
+	
+</head>
+<body>
+    <header class="header">
+        <h1>BinnenZwembaden - ParkVakantieAdvies</h1>
+    </header>
+
+        <nav>
+         <div>
+
+          <a href="index.html">Home</a>
+          <a href="blog1.html">Blog</a>
+
+          <a href="overons1.html" class="active">Over Ons</a>
+        </div>
+   
+    </nav>
+<div class="content">
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_KV_vakantiepark-de-kempervennen?&msclkid=2f80b56f4b7518ed92b9d0c30bc7fc98&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination_Semi-G12512486565&utm_term=de%20kempervennen&utm_content=_B_2_Park_NL_KV_Semi&gclid=COPB7vP57IMDFRtUHQkde_kHtQ&gclsrc=ds"target="_blank"><img src="zwem1.jpg" alt="Park 10"></a>
+        </div>
+        <div class="item-info">
+            <h2>10 De Kempervennen</h2>
+            <p> In Westerhoven, Noord-Brabant, bekend om zijn Aqua Mundo met onder andere een snorkelbad waar je tussen exotische vissen kunt zwemmen.</p>
+            
+            <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_KV_vakantiepark-de-kempervennen?&msclkid=2f80b56f4b7518ed92b9d0c30bc7fc98&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination_Semi-G12512486565&utm_term=de%20kempervennen&utm_content=_B_2_Park_NL_KV_Semi&gclid=COPB7vP57IMDFRtUHQkde_kHtQ&gclsrc=ds"target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_ZV_vakantiepark-park-zandvoort?&msclkid=4160c69ee4d91bcdde1ba332a43ce23e&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination-G12512486562&utm_term=centerparcs%20zandvoort&utm_content=_B_2_Park_NL_ZV&gclid=CJyTsov67IMDFbxAFQgd93YNxQ&gclsrc=ds"target="_blank"><img src="zwem2.jpg" alt="Park 9"></a>
+        </div>
+        <div class="item-info">
+            <h2>9 Center Parcs Park Zandvoort</h2>
+            <p>Dicht bij het strand, biedt een Aqua Mundo met een golfslagbad en diverse waterattracties.</p>
+            <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_ZV_vakantiepark-park-zandvoort?&msclkid=4160c69ee4d91bcdde1ba332a43ce23e&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination-G12512486562&utm_term=centerparcs%20zandvoort&utm_content=_B_2_Park_NL_ZV&gclid=CJyTsov67IMDFbxAFQgd93YNxQ&gclsrc=ds"target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="https://www.landal.nl/parken/Coldenhove?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=Coldenhove%20landal&utm_content=15641-KV4UZUR73YEKO-77790599206832&msclkid=cd30705d1bd31d9b44a815f15adbae05"target="_blank"><img src="zwem3.jpg" alt="Park 8"></a>
+        </div>
+        <div class="item-info">
+            <h2>8 Landal Coldenhove</h2>
+            <p> In Eerbeek, Gelderland, biedt een overdekt zwembad met apart peuterbad en diverse andere faciliteiten voor jong en oud.</p>
+            <a href="https://www.landal.nl/parken/Coldenhove?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=Coldenhove%20landal&utm_content=15641-KV4UZUR73YEKO-77790599206832&msclkid=cd30705d1bd31d9b44a815f15adbae05"target="_blank" class="button">Klik hier</a>
+        </div>
+    </div>
+	<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/hof-domburg/"target="_blank"><img src="zwem4.jpg" alt="Park 7"></a>
+    </div>
+    <div class="item-info">
+        <h2>7 Roompot Hof Domburg</h2>
+        <p> In Domburg, Zeeland, beschikt over een De Parel zwemparadijs met een glijbaan, stroomversnelling en buitenbad.</p>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/hof-domburg/"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 7 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HB_vakantiepark-het-heijderbos?&msclkid=20e1655b8f561bc2a34100f7ce10f4ef&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination-G12512486562&utm_term=centerparcs%20het%20heijderbos%20limburg&utm_content=_B_2_Park_NL_HB&gclid=CNj30Ln67IMDFZpkFQgdj7QB2g&gclsrc=ds"target="_blank"><img src="zwem5.jpg" alt="Park 6"></a>
+    </div>
+    <div class="item-info">
+        <h2>6 Center Parcs Het Heijderbos</h2>
+        <p>Gelegen in Heijen, Limburg, beroemd om de Jungle Dome en de spannende wildwaterbaan in het Aqua Mundo.</p>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HB_vakantiepark-het-heijderbos?&msclkid=20e1655b8f561bc2a34100f7ce10f4ef&utm_source=bing&utm_medium=cpc&utm_campaign=CP_NL_B_2_Geographical_Combination-G12512486562&utm_term=centerparcs%20het%20heijderbos%20limburg&utm_content=_B_2_Park_NL_HB&gclid=CNj30Ln67IMDFZpkFQgdj7QB2g&gclsrc=ds"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 6 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.landal.nl/parken/De-Lommerbergen?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20De%20Lommerbergen%20Reuver&utm_content=15641-YFE47SPQD3QM6-78409074322292&msclkid=56f1a5235ff51f6ddca2c08f1e9101cd"target="_blank"><img src="zwem6.jpg" alt="Park 5"></a>
+    </div>
+    <div class="item-info">
+        <h2>5 Landal De Lommerbergen</h2>
+        <p> In Reuver, Limburg, bekend om zijn subtropisch zwemparadijs met golfslagbad, glijbanen en Exotic Garden.</p>
+        <a href="https://www.landal.nl/parken/De-Lommerbergen?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=landal%20De%20Lommerbergen%20Reuver&utm_content=15641-YFE47SPQD3QM6-78409074322292&msclkid=56f1a5235ff51f6ddca2c08f1e9101cd"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.hofvansaksen.nl/resort"target="_blank"><img src="zwem7.jpg" alt="Park 4"></a>
+    </div>
+    <div class="item-info">
+        <h2>4 Hof van Saksen</h2>
+        <p>In Nooitgedacht, Drenthe, biedt een luxe zwemervaring met onder andere de grootste indoor waterglijbaan ter wereld.</p>
+        <a href="https://www.hofvansaksen.nl/resort"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank"><img src="zwem8.jpg" alt="Park 3"></a>
+    </div>
+    <div class="item-info">
+        <h2>3 Roompot Weerterbergen</h2>
+        <p>In Weert, uitgerust met een binnenzwembad met glijbaan, apart kinderbad en diverse wellnessfaciliteiten.</p>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.landal.nl/parken/Het-Vennenbos?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=Het%20Vennenbos&utm_content=15641-MHHUK2BN3X46Q-78477794080288&msclkid=4219da52fa581a19ccb1bffebb9abfe2"target="_blank"><img src="zwem9.jpg" alt="Park 2"></a>
+    </div>
+    <div class="item-info">
+        <h2>2 Landal Het Vennenbos</h2>
+        <p> In Hapert, biedt een subtropisch waterparadijs met een golfslagbad, glijbanen en een Black Hole glijbaan met sterrenhemel en lichteffecten.</p>
+        <a href="https://www.landal.nl/parken/Het-Vennenbos?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=Het%20Vennenbos&utm_content=15641-MHHUK2BN3X46Q-78477794080288&msclkid=4219da52fa581a19ccb1bffebb9abfe2"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+<div class="top-item">
+    <div class="item-image">
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_EH_vakantiepark-de-eemhof"target="_blank"><img src="zwem10.jpg" alt="Park 1"></a>
+    </div>
+    <div class="item-info">
+        <h2>1 Center Parcs De Eemhof <h2>
+        <p>Gelegen in Zeewolde, bekend om zijn spectaculaire Aqua Mundo met een golfslagbad, wildwaterbaan en diverse glijbanen.</p>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_EH_vakantiepark-de-eemhof"target="_blank" class="button">Klik hier</a>
+    </div>
+</div> <!-- Sluit de top-item div voor Park 5 -->
+
+
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+       
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: info@parkvakantieadvies.nl</p>
+        </div>
+      
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>&copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9NodLv2KmTfdt-i9zumBteZlcIyMZld4",
+      authDomain: "parkvakantieadvies-19209.firebaseapp.com",
+      projectId: "parkvakantieadvies-19209",
+      storageBucket: "parkvakantieadvies-19209.appspot.com",
+      messagingSenderId: "807746942840",
+      appId: "1:807746942840:web:20a119e53384389ca07a8d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
