@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ParkVakantieAdvies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Verwijst naar je bestaande CSS bestand -->
+    <style>
+	/* Media query voor kleinere schermen */
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-image: url('header.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: left;
+            padding-top: 30px; /* Pas aan voor verticale uitlijning */
+            padding-bottom: 30px; /* Pas aan voor verticale uitlijning */
+            padding-left: 50px; /* Pas aan voor horizontale uitlijning */
+			
+        }
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Verhoog de padding */
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px; /* Vergroot de padding van de links */
+    text-decoration: none;
+    font-size: 15px; /* Verhoog de tekstgrootte */
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+
+
+        /* Responsief ontwerp voor kleine schermen */
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            .search-container {
+                margin-top: 10px;
+            }
+            .search-container input[type="text"],
+            .search-container button {
+                width: 100%;
+            }
+        }
+        .contact-form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, .input-group input:not(:placeholder-shown),
+.input-group textarea:focus, .input-group textarea:not(:placeholder-shown) {
+    outline: none;
+    border-color: #333;
+}
+
+.input-group input:focus + label, .input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label, .input-group textarea:not(:placeholder-shown) + label {
+    top: -30px;
+    left: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #333;
+}
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Contact - ParkVakantieAdvies</h1>
+    </header>
+
+    <nav>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="blog1.html">Blog</a>
+          <a href="contactform1.html">Contact</a>
+          <a href="overons1.html" class="active">Over Ons</a>
+        </div>
+   
+    </nav>
+
+    <div class="contact-form-container" id="formContainer">
+        <form id="contactForm">
+            <h2>Contacteer Ons</h2>
+            <div class="input-group">
+                <input type="text" id="naam" name="naam" required>
+                <label for="naam">Naam</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="bericht" name="bericht" required></textarea>
+                <label for="bericht">Bericht</label>
+            </div>
+            <button type="submit">Verstuur</button>
+        </form>
+    </div>
+    <div class="contact-form-container" id="bedanktBericht" style="display: none;">
+        <h2>Bedankt voor je bericht!</h2>
+        </div>
+
+    <footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+        <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+            <div class="footer-section" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+            </div>
+            <div class="footer-section" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 20px;">Contact</h3>
+                <p>Email: info@parkvakantieadvies.nl</p>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+            <p>&copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Voorkomt dat het formulier daadwerkelijk wordt ingediend
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('bedanktBericht').style.display = 'block';
+        });
+    </script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9NodLv2KmTfdt-i9zumBteZlcIyMZld4",
+      authDomain: "parkvakantieadvies-19209.firebaseapp.com",
+      projectId: "parkvakantieadvies-19209",
+      storageBucket: "parkvakantieadvies-19209.appspot.com",
+      messagingSenderId: "807746942840",
+      appId: "1:807746942840:web:20a119e53384389ca07a8d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

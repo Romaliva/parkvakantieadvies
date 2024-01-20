@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouw Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+	
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-image: url('header.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: left;
+            padding-top: 30px; /* Pas aan voor verticale uitlijning */
+            padding-bottom: 30px; /* Pas aan voor verticale uitlijning */
+            padding-left: 50px; /* Pas aan voor horizontale uitlijning */
+			
+        }
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Verhoog de padding */
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px; /* Vergroot de padding van de links */
+    text-decoration: none;
+    font-size: 15px; /* Verhoog de tekstgrootte */
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+
+
+        /* Responsief ontwerp voor kleine schermen */
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            .search-container {
+                margin-top: 10px;
+            }
+            .search-container input[type="text"],
+            .search-container button {
+                width: 100%;
+            }
+        }
+
+        /* Inhoud Stijlen */
+        .content {
+            padding: 20px;
+        }
+       .speelse-tekst {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f8f8; 
+            font-family: Arial, sans-serif;
+        }
+
+        .speelse-tekst h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; /* Gebruik het geïmporteerde lettertype */
+        }
+
+        .speelse-tekst p {
+            color: #666;
+            font-size: 1.2em;
+        }
+/* Stijl voor de afbeeldingen-rij */
+.afbeeldingen-rij {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.afbeeldingen-rij a {
+    flex-basis: 18%;
+    margin: 1%;
+    position: relative; /* Voor positionering van de tekst */
+    display: flex;
+    justify-content: center;
+}
+
+.afbeelding-container {
+    position: relative;
+    width: 100%; /* Breedte van de container */
+    height: 200px; /* Vaste hoogte van de container */
+}
+
+.afbeeldingen-rij img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt dat de afbeelding de container vult zonder aspect ratio te verliezen */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.afbeeldingen-rij a:hover img {
+    transform: scale(1.05);
+}
+
+.afbeelding-tekst {
+    position: absolute;
+    bottom: 10px; /* Positie van de tekst vanaf de onderkant */
+    left: 10px; /* Positie van de tekst vanaf de linkerkant */
+    color: white; /* Tekstkleur */
+    font-size: 1em; /* Tekstgrootte */
+    font-weight: bold; /* Vetgedrukte tekst */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Schaduw voor betere leesbaarheid */
+}
+.moderne-tekst-sectie {
+        background-color: C0D7A6; /* Gebruik van je kleurcode */
+        color: #333;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .moderne-tekst-sectie h2 {
+        margin-bottom: 30px;
+    }
+
+    .tekst-blokken {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tekst-blok {
+        background-color: #C0D7A6;
+        color: #333;
+        margin: 10px;
+        padding: 20px;
+        flex-basis: 28%; /* Aanpassen voor responsiviteit */
+        border-radius: 10px; /* Afgeronde hoeken voor een speels effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtiele schaduw voor diepte */
+    }
+
+    @media screen and (max-width: 600px) {
+        .tekst-blok {
+            flex-basis: 80%; /* Aanpassen voor mobiele weergave */
+        }
+    }
+	     .slider-sectie {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slider-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide {
+        display: none;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 400px; /* Pas de hoogte aan naar wens */
+    }
+
+    .slide-inhoud {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* Halfdoorzichtige achtergrond */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,1);
+    }   
+.school-vakantie-kalender {
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.school-vakantie-kalender h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.school-vakantie-kalender .regio-selectie {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.school-vakantie-kalender .regio {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color:  #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.school-vakantie-kalender .regio:hover {
+    background-color: #C0D7A6;
+}
+.school-vakantie-kalender .regio.selected {
+    background-color: #C0D7A6;
+}
+.school-vakantie-kalender table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.school-vakantie-kalender th, .school-vakantie-kalender td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.school-vakantie-kalender th {
+    background-color:  #C0D7A6;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ParkVakantieAdvies.nl</h1>
+    </header>
+
+    <nav>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="blog1.html">Blog</a>
+          <a href="contactform1.html">Contact</a>
+          <a href="overons1.html" class="active">Over Ons</a>
+        </div>
+       
+    </nav>
+
+    <div class="speelse-tekst">
+    <h2>Ontdek, Ontspan, Geniet met ParkVakantieAdvies!</h2>
+    <p>Laat je inspireren door onze verhalen en tips voor jouw droomreis.</p>
+</div>
+<!-- Sectie voor afbeeldingen met links -->
+<div class="afbeeldingen-rij">
+    <a href="top10pagina.html">
+        <div class="afbeelding-container">
+            <img src="afbeelding1.jpg" alt="Beschrijving1">
+            <p class="afbeelding-tekst">Top 10 NatuurVakantie</p>
+        </div>
+    </a>
+    <a href="pagina2.html">
+        <div class="afbeelding-container">
+            <img src="afbeelding2.jpg" alt="Beschrijving2">
+            <p class="afbeelding-tekst">Top 10 HondenVakantie</p>
+        </div>
+    </a>
+	  <a href="pagina2.html">
+        <div class="afbeelding-container">
+            <img src="afbeelding3.jpg" alt="Beschrijving2">
+            <p class="afbeelding-tekst">Top 10 StrandVakantie</p>
+        </div>
+    </a>
+	  <a href="pagina2.html">
+        <div class="afbeelding-container">
+            <img src="afbeelding4.jpg" alt="Beschrijving2">
+            <p class="afbeelding-tekst">Top 10 RelaxVakantie</p>
+        </div>
+    </a>
+	  <a href="pagina2.html">
+        <div class="afbeelding-container">
+            <img src="afbeelding5.jpg" alt="Beschrijving2">
+            <p class="afbeelding-tekst">Top 10 ZwemVakantie</p>
+        </div>
+    </a>
+    <!-- Herhaal voor andere afbeeldingen -->
+</div>
+<!-- Sectie voor Full-Width Slider -->
+<div class="slider-sectie">
+    <div class="slider-container">
+        <!-- Slider Item 1 -->
+        <div class="slide" style="background-image: url('afbeelding1.jpg');">
+    <a href="jouw-link-hier.html" class="slide-link">
+        <div class="slide-inhoud">
+            <h2>Ontspan op het Strand</h2>
+            <p>Tot 30% korting op strandvakanties!</p>
+        </div>
+    </a>
+</div>
+        </div>
+		    <div class="slide" style="background-image: url('afbeelding2.jpg');">
+    <a href="jouw-link-hier.html" class="slide-link">
+        <div class="slide-inhoud">
+            <h2>Ontspan op het Strand</h2>
+            <p>Tot 30% korting op strandvakanties!</p>
+        </div>
+    </a>
+</div>
+        </div>
+<!-- Vakantie -->
+<div class="school-vakantie-kalender">
+    <h2>Schoolvakanties Nederland 2024</h2>
+    <div class="regio-selectie">
+        <div class="regio noord" onclick="vulVakantieData('noord')">Noord</div>
+        <div class="regio midden" onclick="vulVakantieData('midden')">Midden</div>
+        <div class="regio zuid" onclick="vulVakantieData('zuid')">Zuid</div>
+    </div>
+    <table>
+        <tr>
+            <th>Vakantie</th>
+            <th>Datum</th>
+        </tr>
+        <tr>
+            <td>Voorjaarsvakantie</td>
+            <td id="voorjaar"></td>
+        </tr>
+        <tr>
+            <td>Meivakantie</td>
+            <td id="mei"></td>
+        </tr>
+        <tr>
+            <td>Zomervakantie</td>
+            <td id="zomer"></td>
+        </tr>
+        <tr>
+            <td>Herfstvakantie</td>
+            <td id="herfst"></td>
+        </tr>
+        <tr>
+            <td>Kerstvakantie</td>
+            <td id="kerst"></td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- Sectie voor speelse maar moderne tekst -->
+<div class="moderne-tekst-sectie">
+    <h2>Laatste Tips & Tricks</h2>
+    <p>Ontdek de nieuwste reistrends, handige tips voor je volgende avontuur, en meer!</p>
+    <div class="tekst-blokken">
+        <div class="tekst-blok">
+            <h3>Reistips</h3>
+            <p>Vind de beste tips voor budgetvriendelijk reizen, de must-see bestemmingen van dit jaar, en meer.</p>
+        </div>
+        <div class="tekst-blok">
+            <h3>Bestemmingen</h3>
+            <p>Ontdek verborgen pareltjes en populaire hotspots die je niet mag missen.</p>
+        </div>
+        <div class="tekst-blok">
+            <h3>Reisverhalen</h3>
+            <p>Laat je inspireren door reisverhalen van onze gemeenschap en deel je eigen avonturen.</p>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+        slideIndex += n;
+        if (slideIndex > slides.length - 1) {slideIndex = 0} 
+        if (slideIndex < 0) {slideIndex = slides.length - 1}
+        showCurrentSlide();
+    }
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Verander elke 4 seconden
+    }
+
+    function showCurrentSlide() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex].style.display = "block";
+    }
+function vulVakantieData(regio) {
+    const vakantieData = {
+        noord: { voorjaar: "17-25 feb", mei: "27 apr - 5 mei", zomer: "20 jul - 1 sep", herfst: "21-29 okt", kerst: "23 dec - 7 jan" },
+        midden: { voorjaar: "17-25 feb", mei: "27 apr - 5 mei", zomer: "13 jul - 25 aug", herfst: "14-22 okt", kerst: "23 dec - 7 jan" },
+        zuid: { voorjaar: "10-18 feb", mei: "27 apr - 5 mei", zomer: "6 jul - 18 aug", herfst: "14-22 okt", kerst: "23 dec - 7 jan" },
+    };
+
+    let data = vakantieData[regio];
+    if(data) {
+        document.getElementById("voorjaar").textContent = data.voorjaar;
+        document.getElementById("mei").textContent = data.mei;
+		document.getElementById("zomer").textContent = data.zomer;
+		document.getElementById("herfst").textContent = data.herfst;
+		document.getElementById("kerst").textContent = data.kerst;
+       
+        // Verwijder 'selected' van alle regio's
+        document.querySelectorAll('.school-vakantie-kalender .regio').forEach(regioElement => regioElement.classList.remove('selected'));
+        // Voeg 'selected' toe aan geselecteerde regio
+        document.querySelector('.school-vakantie-kalender .regio.' + regio).classList.add('selected');
+    } else {
+        // Maak de cellen leeg als er geen regio is geselecteerd
+        document.querySelectorAll('.school-vakantie-kalender td[id]').forEach(td => td.textContent = '');
+        // Verwijder 'selected' van alle regio's als er geen regio is geselecteerd
+        document.querySelectorAll('.school-vakantie-kalender .regio').forEach(regioElement => regioElement.classList.remove('selected'));
+    }
+}
+
+</script>
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+       
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: info@parkvakantieadvies.nl</p>
+        </div>
+      
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>&copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9NodLv2KmTfdt-i9zumBteZlcIyMZld4",
+      authDomain: "parkvakantieadvies-19209.firebaseapp.com",
+      projectId: "parkvakantieadvies-19209",
+      storageBucket: "parkvakantieadvies-19209.appspot.com",
+      messagingSenderId: "807746942840",
+      appId: "1:807746942840:web:20a119e53384389ca07a8d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

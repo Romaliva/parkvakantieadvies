@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Vakantieparken</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Verwijst naar je bestaande CSS bestand -->
+<style>
+/* Nieuwe stijlen voor tekst */
+.item-info p {
+    font-size: 1rem; /* Aanpasbare tekstgrootte */
+    margin-bottom: 15px; /* Ruimte onder paragrafen */
+    text-align: justify; /* Tekst uitlijnen voor betere leesbaarheid */
+}
+
+/* Stijlen voor headers */
+.item-info h2 {
+    margin-top: 0; /* Verwijder bovenmarge */
+    color: #333; /* Kleur voor headers */
+    font-weight: bold; /* Vetgedrukte titels */
+}
+
+/* Media query voor kleinere schermen */
+@media screen and (max-width: 768px) {
+    .item-info p {
+        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('header.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: left;
+    padding-top: 30px; /* Pas aan voor verticale uitlijning */
+    padding-bottom: 30px; /* Pas aan voor verticale uitlijning */
+    padding-left: 50px; /* Pas aan voor horizontale uitlijning */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Verhoog de padding */
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px; /* Vergroot de padding van de links */
+    text-decoration: none;
+    font-size: 15px; /* Verhoog de tekstgrootte */
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-image a {
+    display: block; /* Zorgt ervoor dat de link de hele afbeelding bedekt */
+}
+
+.item-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.item-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.item-info .button {
+    display: inline-block;
+    background-color: #C0D7A6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.item-info .button:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .top-item {
+        flex-direction: column;
+    }
+    .item-image img {
+        width: 100%;
+        border-right: none;
+    }
+}
+</style>	
+	
+</head>
+<body>
+    <header class="header">
+        <h1>Top10 - ParkVakantieAdvies</h1>
+    </header>
+
+        <nav>
+         <div>
+          <a href="index.html">Home</a>
+          <a href="blog1.html">Blog</a>
+          <a href="contactform1.html">Contact</a>
+          <a href="overons1.html" class="active">Over Ons</a>
+        </div>
+   
+    </nav>
+<div class="content">
+    <div class="top-item">
+        <div class="item-image">
+            <a href="jouw-affiliate-link-hier"><img src="Afbeelding1.jpg" alt="Park 10"></a>
+        </div>
+        <div class="item-info">
+            <h2>10 CenterParcs de Kempervennen</h2>
+            <p>Dit vakantiepark van Roompot staat op nummer 10 vanwege zijn prachtige ligging in een schilderachtige omgeving, omringd door weelderige bossen en met een adembenemend uitzicht op een schilderachtig meer. Gasten waarderen de rust en sereniteit die deze bestemming biedt, waardoor het de perfecte plek is om even te ontsnappen aan de drukte van het dagelijkse leven.</p>
+            <p>Het park zelf biedt een breed scala aan voorzieningen en activiteiten voor alle leeftijden, waaronder een overdekt zwembad, een avontuurlijke speeltuin voor kinderen en een luxe spa voor volwassenen die willen ontspannen en tot rust willen komen. Daarnaast zijn er tal van sport- en recreatiemogelijkheden, zoals wandel- en fietspaden, watersportactiviteiten en zelfs een eigen golfbaan.</p>
+            <p>Wat dit vakantiepark echt onderscheidt, is de uitstekende service en gastvrijheid die door het personeel wordt geboden. De medewerkers doen er alles aan om ervoor te zorgen dat de gasten zich thuis voelen en hun verblijf onvergetelijk maken.</p>
+            <a href="jouw-affiliate-link-hier" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="jouw-affiliate-link-hier"><img src="Afbeelding2.jpg" alt="Park 9"></a>
+        </div>
+        <div class="item-info">
+            <h2>9 Roompot</h2>
+            <p>Korte beschrijving van het park...</p>
+            <a href="jouw-affiliate-link-hier" class="button">Klik hier</a>
+        </div>
+    </div>
+    <div class="top-item">
+        <div class="item-image">
+            <a href="jouw-affiliate-link-hier"><img src="Afbeelding3.jpg" alt="Park 8"></a>
+        </div>
+        <div class="item-info">
+            <h2>8 Landal</h2>
+            <p>Korte beschrijving van het park...</p>
+            <a href="jouw-affiliate-link-hier" class="button">Klik hier</a>
+        </div>
+    </div>
+</div>
+
+
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+       
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: info@parkvakantieadvies.nl</p>
+        </div>
+      
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>&copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9NodLv2KmTfdt-i9zumBteZlcIyMZld4",
+      authDomain: "parkvakantieadvies-19209.firebaseapp.com",
+      projectId: "parkvakantieadvies-19209",
+      storageBucket: "parkvakantieadvies-19209.appspot.com",
+      messagingSenderId: "807746942840",
+      appId: "1:807746942840:web:20a119e53384389ca07a8d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
