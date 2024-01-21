@@ -21,25 +21,7 @@
     font-weight: bold; /* Vetgedrukte titels */
 }
 
-@media screen and (max-width: 600px) {
-    nav a {
-        padding: 15px 30px; /* Vergroot de padding voor betere aanklikbaarheid */
-        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
-    }
 
-    .content, .speelse-tekst, .moderne-tekst-sectie, .tekst-blok {
-        padding: 20px 10px; /* Pas padding aan voor kleinere schermen */
-    }
-
-    .afbeeldingen-rij a {
-        flex-basis: 48%; /* Pas de breedte van afbeeldingslinks aan voor kleinere schermen */
-        margin: 1%;
-    }
-
-    .tekst-blok {
-        flex-basis: 100%; /* Laat tekstblokken de volle breedte innemen op kleine schermen */
-    }
-}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -128,13 +110,35 @@ nav a:hover {
     background-color: #333;
 }
 
-@media screen and (max-width: 768px) {
-    .top-item {
-        flex-direction: column;
+ @media screen and (max-width: 600px) {
+    nav a {
+        padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
+        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
     }
+		    .header {
+        padding: 50px 0; /* Verklein de padding van de header */
+    }
+
+    .header h1 {
+        font-size: 1.8em; /* Verklein de lettergrootte van de hoofdtitel */
+        padding-left: 20px; /* Verklein de padding aan de linkerkant */
+    }
+
+    .top-item {
+        flex-direction: column; /* Zet de items onder elkaar */
+    }
+
+    .item-image, .item-info {
+        width: 100%; /* Zorgt dat de afbeelding en tekst de volledige breedte innemen */
+    }
+
     .item-image img {
-        width: 100%;
-        border-right: none;
+        width: 100%; /* Zorgt dat de afbeelding zich aanpast aan de breedte van de container */
+        height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    }
+
+    .item-info {
+        padding: 15px; /* Aangepaste padding voor betere leesbaarheid */
     }
 }
 </style>	

@@ -21,12 +21,7 @@
     font-weight: bold; /* Vetgedrukte titels */
 }
 
-/* Media query voor kleinere schermen */
-@media screen and (max-width: 768px) {
-    .item-info p {
-        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
-    }
-}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -115,13 +110,36 @@ nav a:hover {
     background-color: #333;
 }
 
-@media screen and (max-width: 768px) {
-    .top-item {
-        flex-direction: column;
+
+ @media screen and (max-width: 600px) {
+    nav a {
+        padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
+        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
     }
+		    .header {
+        padding: 50px 0; /* Verklein de padding van de header */
+    }
+
+    .header h1 {
+        font-size: 1.8em; /* Verklein de lettergrootte van de hoofdtitel */
+        padding-left: 20px; /* Verklein de padding aan de linkerkant */
+    }
+
+    .top-item {
+        flex-direction: column; /* Zet de items onder elkaar */
+    }
+
+    .item-image, .item-info {
+        width: 100%; /* Zorgt dat de afbeelding en tekst de volledige breedte innemen */
+    }
+
     .item-image img {
-        width: 100%;
-        border-right: none;
+        width: 100%; /* Zorgt dat de afbeelding zich aanpast aan de breedte van de container */
+        height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    }
+
+    .item-info {
+        padding: 15px; /* Aangepaste padding voor betere leesbaarheid */
     }
 }
 </style>	
