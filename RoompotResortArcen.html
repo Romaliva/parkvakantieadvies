@@ -121,6 +121,25 @@ nav a:hover {
     background-color: #C0D7A6;
     color: white;
 }
+@media screen and (max-width: 600px) {
+    nav a {
+        padding: 15px 30px; /* Vergroot de padding voor betere aanklikbaarheid */
+        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
+    }
+
+    .content, .speelse-tekst, .moderne-tekst-sectie, .tekst-blok {
+        padding: 20px 10px; /* Pas padding aan voor kleinere schermen */
+    }
+
+    .afbeeldingen-rij a {
+        flex-basis: 48%; /* Pas de breedte van afbeeldingslinks aan voor kleinere schermen */
+        margin: 1%;
+    }
+
+    .tekst-blok {
+        flex-basis: 100%; /* Laat tekstblokken de volle breedte innemen op kleine schermen */
+    }
+}
 
 	</style>
 <body>
