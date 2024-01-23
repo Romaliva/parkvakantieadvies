@@ -277,8 +277,10 @@ nav a:hover {
     background-color: #C0D7A6;
 }
 .school-vakantie-kalender table {
-    width: 100%;
+    width: 110%; /* Verander naar 100% of minder voor betere responsiviteit */
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 .school-vakantie-kalender th, .school-vakantie-kalender td {
     border: 1px solid #ddd;
@@ -454,9 +456,9 @@ nav a:hover {
     }
 function vulVakantieData(regio) {
     const vakantieData = {
-        noord: { voorjaar: "17-25 feb", mei: "27 apr - 5 mei", zomer: "20 jul - 1 sep", herfst: "21-29 okt", kerst: "23 dec - 7 jan" },
-        midden: { voorjaar: "17-25 feb", mei: "27 apr - 5 mei", zomer: "13 jul - 25 aug", herfst: "14-22 okt", kerst: "23 dec - 7 jan" },
-        zuid: { voorjaar: "10-18 feb", mei: "27 apr - 5 mei", zomer: "6 jul - 18 aug", herfst: "14-22 okt", kerst: "23 dec - 7 jan" },
+        noord: { voorjaar: "17-25 feb", mei: "27 apr-5 mei", zomer: "20 jul-1 sep", herfst: "21-29 okt", kerst: "23 dec-7 jan" },
+        midden: { voorjaar: "17-25 feb", mei: "27 apr-5 mei", zomer: "13 jul-25 aug", herfst: "14-22 okt", kerst: "23 dec-7 jan" },
+        zuid: { voorjaar: "10-18 feb", mei: "27 apr-5 mei", zomer: "6 jul-18 aug", herfst: "14-22 okt", kerst: "23 dec-7 jan" },
     };
 
     let data = vakantieData[regio];
