@@ -32,12 +32,7 @@
     font-weight: bold; /* Vetgedrukte titels */
 }
 
-/* Media query voor kleinere schermen */
-@media screen and (max-width: 768px) {
-    .item-info p {
-        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
-    }
-}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -118,13 +113,21 @@ nav a:hover {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 15px; /* Voeg ruimte toe aan de rechterkant van de knop */
+}
+
+.item-info .blog-button {
+    display: inline-block;
+    background-color: #C0D7A6; /* Een andere achtergrondkleur voor onderscheid */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
     margin-top: 10px;
 }
 
-.item-info .button:hover {
-    background-color: #333;
-}
 
  @media screen and (max-width: 600px) {
     nav a {
@@ -184,7 +187,7 @@ nav a:hover {
             <h2>10 Landal Strand Resort Nieuwvliet-Bad</h2>
             <p>Gelegen in Zeeland, dicht bij hondvriendelijke stranden, ideaal voor vakanties met huisdieren.</p>
             
-            <a href="https://www.landal.nl/parken/strand-resort-nieuwvliet-bad"target="_blank" class="button">Klik hier</a>
+            <a href="https://www.landal.nl/parken/strand-resort-nieuwvliet-bad"target="_blank" class="button">Website</a>
         </div>
     </div>
     <div class="top-item">
@@ -204,7 +207,7 @@ nav a:hover {
         <div class="item-info">
             <h2>8 Vakantiepark Het Lierderholt</h2>
             <p>In Beekbergen, Veluwe, biedt uitstekende voorzieningen voor zowel honden als hun eigenaren.</p>
-            <a href="https://www.lierderholt.nl/"target="_blank" class="button">Klik hier</a>
+            <a href="https://www.lierderholt.nl/"target="_blank" class="button">Website</a>
         </div>
     </div>
 	<div class="top-item">
@@ -214,7 +217,7 @@ nav a:hover {
     <div class="item-info">
         <h2>7 EuroParcs Resort De Achterhoek</h2>
         <p>In Lochem, een ruim opgezet park in een bosrijke omgeving waar honden welkom zijn.</p>
-        <a href="https://www.europarcs.nl/vakantieparken/nederland/gelderland/de-achterhoek"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.europarcs.nl/vakantieparken/nederland/gelderland/de-achterhoek"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 7 -->
 
@@ -225,7 +228,7 @@ nav a:hover {
     <div class="item-info">
         <h2>6 RCN de Roggeberg</h2>
         <p>Gelegen in Appelscha, Friesland, is dit park omringd door het nationaal park Drents-Friese Wold, ideaal voor lange wandelingen.</p>
-        <a href="https://www.rcn.nl/nl/vakantieparken/nederland/friesland/rcn-de-roggeberg"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.rcn.nl/nl/vakantieparken/nederland/friesland/rcn-de-roggeberg"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 6 -->
 
@@ -237,6 +240,7 @@ nav a:hover {
         <h2>5 Landal Het Vennenbos</h2>
         <p>In Hapert, Noord-Brabant, biedt dit park naast bosrijke omgevingen ook speciale accommodaties voor gasten met honden.</p>
         <a href="https://www.landal.nl/parken/Het-Vennenbos?utm_source=bing&utm_medium=cpc&utm_campaign=LGP%20NL%20-%202.%20Parks%20%7C%20NL&utm_term=Het%20Vennenbos&utm_content=15641-MHHUK2BN3X46Q-78477838244260&msclkid=a10f26c25c371c1938dd436e6067b914"target="_blank" class="button">Klik hier</a>
+		<a href="vennenbos.html" target="_blank" class="button blog-button">Naar de Blog</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -246,7 +250,7 @@ nav a:hover {
     <div class="item-info">
         <h2>4 Molecaten Park Kuierpad</h2>
         <p>In Wezuperbrug, Drenthe, omringd door natuur en met verschillende wandelroutes waar honden kunnen genieten.</p>
-        <a href="https://www.molecaten.nl/kuierpad"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.molecaten.nl/kuierpad"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 
@@ -257,7 +261,7 @@ nav a:hover {
     <div class="item-info">
         <h2>3 Center Parcs Parc Sandur</h2>
         <p>Gelegen in Emmen, bekend om zijn rustige omgeving en ruime opzet, ideaal voor wandelingen met de hond.</p>
-        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_SR_vakantiepark-parc-sandur"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_SR_vakantiepark-parc-sandur"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -267,7 +271,8 @@ nav a:hover {
     <div class="item-info">
         <h2>2 Roompot Beach Resort</h2>
         <p>Gelegen in Kamperland, Zeeland, biedt dit park toegang tot prachtige stranden waar honden welkom zijn.</p>
-        <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/roompot-beach-resort/"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/zeeland/roompot-beach-resort/"target="_blank" class="button">Website</a>
+		<a href="beachresort.html" target="_blank" class="button blog-button">Naar de Blog</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -277,7 +282,7 @@ nav a:hover {
     <div class="item-info">
         <h2>1 Landal Twenhaarsveld</h2>
         <p>Gelegen in Holten, in de prachtige natuur van de Sallandse Heuvelrug, biedt dit park speciale hondenbungalows.</p>
-        <a href="https://www.landal.nl/parken/twenhaarsveld"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.landal.nl/parken/twenhaarsveld"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 

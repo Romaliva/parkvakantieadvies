@@ -31,12 +31,7 @@
     font-weight: bold; /* Vetgedrukte titels */
 }
 
-/* Media query voor kleinere schermen */
-@media screen and (max-width: 768px) {
-    .item-info p {
-        font-size: 0.9rem; /* Kleinere tekstgrootte op mobiele apparaten */
-    }
-}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -117,13 +112,21 @@ nav a:hover {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 15px; /* Voeg ruimte toe aan de rechterkant van de knop */
+}
+
+.item-info .blog-button {
+    display: inline-block;
+    background-color: #C0D7A6; /* Een andere achtergrondkleur voor onderscheid */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
     margin-top: 10px;
 }
 
-.item-info .button:hover {
-    background-color: #333;
-}
 
  @media screen and (max-width: 600px) {
     nav a {
@@ -183,7 +186,7 @@ nav a:hover {
             <h2>10 Vakantiepark Oranje</h2>
             <p>Voorheen bekend als Speelstad Oranje, in Drenthe, biedt een overdekt speelparadijs en is ideaal voor gezinnen met jonge kinderen.</p>
             
-            <a href="https://www.speelstad.be/"target="_blank" class="button">Klik hier</a>
+            <a href="https://www.speelstad.be/"target="_blank" class="button">Website</a>
         </div>
     </div>
     <div class="top-item">
@@ -193,7 +196,7 @@ nav a:hover {
         <div class="item-info">
             <h2>9 Vakantiepark Dierenbos</h2>
             <p> In Vinkel, waar kinderen kunnen genieten van de interactie met dieren en diverse speeltuinen.</p>
-            <a href="https://www.dierenbos.nl/"target="_blank" class="button">Klik hier</a>
+            <a href="https://www.dierenbos.nl/"target="_blank" class="button">Website</a>
         </div>
     </div>
     <div class="top-item">
@@ -203,7 +206,7 @@ nav a:hover {
         <div class="item-info">
             <h2>8 Landal GreenParks Sluftervallei</h2>
             <p>Op Texel, omgeven door natuur en met veel ruimte voor kinderen om te spelen en de omgeving te verkennen.</p>
-            <a href="https://www.landal.nl/parken/sluftervallei"target="_blank" class="button">Klik hier</a>
+            <a href="https://www.landal.nl/parken/sluftervallei"target="_blank" class="button">Website</a>
         </div>
     </div>
 	<div class="top-item">
@@ -213,7 +216,7 @@ nav a:hover {
     <div class="item-info">
         <h2>7 Duinrell</h2>
         <p>Gelegen in Wassenaar, biedt naast het attractiepark ook een zwemparadijs en is dicht bij het strand.</p>
-        <a href="https://www.duinrell.com/"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.duinrell.com/"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 7 -->
 
@@ -224,7 +227,7 @@ nav a:hover {
     <div class="item-info">
         <h2>6 PonyparkCity</h2>
         <p>In Collendoorn, een uniek vakantiepark waar kinderen hun eigen pony kunnen verzorgen tijdens hun verblijf.</p>
-        <a href="https://www.ponyparkcity.nl/?msclkid=014e0b6fcef6123980fe6ec387c7c25d"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.ponyparkcity.nl/?msclkid=014e0b6fcef6123980fe6ec387c7c25d"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 6 -->
 
@@ -235,7 +238,7 @@ nav a:hover {
     <div class="item-info">
         <h2>5 Beekse Bergen</h2>
         <p>In Hilvarenbeek, combineert dit park een vakantie met bezoeken aan het safaripark, waar kinderen wilde dieren kunnen zien en meer leren over de natuur.</p>
-        <a href="https://www.beeksebergen.nl/"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.beeksebergen.nl/"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -245,7 +248,7 @@ nav a:hover {
     <div class="item-info">
         <h2>4 Roompot Weerterbergen</h2>
         <p>In Weert, biedt een breed scala aan faciliteiten waaronder een indoor speeltuin, zwembad en kinderanimatie.</p>
-        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.roompot.nl/bestemmingen/nederland/limburg-nl/weerterbergen/"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 
@@ -256,7 +259,7 @@ nav a:hover {
     <div class="item-info">
         <h2>3 Landal Rabbit Hill</h2>
         <p>Gelegen in Nieuw-Milligen, op de Veluwe, met een indoor speelparadijs, zwembad en de natuur direct buiten de deur.</p>
-        <a href="https://www.landal.nl/parken/rabbit-hill"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.landal.nl/parken/rabbit-hill"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -266,7 +269,7 @@ nav a:hover {
     <div class="item-info">
         <h2>2 Center Parcs De Huttenheugte</h2>
         <p>In Dalen, Drenthe, bekend om het grote indoor speelparadijs, de Aqua Mundo en de nabijheid van Plopsa Indoor Coevorden.</p>
-        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HH_vakantiepark-de-huttenheugte"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HH_vakantiepark-de-huttenheugte"target="_blank" class="button">Website</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 <div class="top-item">
@@ -276,7 +279,8 @@ nav a:hover {
     <div class="item-info">
         <h2>1 De Efteling Bosrijk</h2>
         <p>Gelegen in Kaatsheuvel, biedt dit park directe toegang tot het sprookjesachtige pretpark de Efteling, compleet met comfortabele accommodaties.</p>
-        <a href="https://www.efteling.com/nl/bosrijk"target="_blank" class="button">Klik hier</a>
+        <a href="https://www.efteling.com/nl/bosrijk"target="_blank" class="button">Website</a>
+		<a href="efteling.html" target="_blank" class="button blog-button">Naar de Blog</a>
     </div>
 </div> <!-- Sluit de top-item div voor Park 5 -->
 
