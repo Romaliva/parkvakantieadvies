@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<link rel="icon" href="logo.jpg" type="logo.jpg">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE5MRZDK6Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE5MRZDK6Y');
+</script>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwembaden in Vakantieparken Nederland | ParkVakantieAdvies</title>
+    <meta name="description" content="Ontdek de mooiste zwembaden in Nederlandse vakantieparken. Ideaal voor gezinnen en ontspanning. Vind jouw perfecte waterparadijs bij ParkVakantieAdvies.">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Verwijst naar je bestaande CSS bestand -->
+<style>
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('header4.png'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 250px 0;
+}
+.centered-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Hoogte ingesteld op 200 pixels */
+}
+
+
+
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centreert de items horizontaal */
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: #C0D7A6;
+    color: white;
+}
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+.dropdown {
+    width: 100%; /* Zorgt dat de dropdown de volledige breedte inneemt */
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #C0D7A6; /* Voorbeeld achtergrondkleur */
+    color: black; /* Voorbeeld tekstkleur */
+    padding: 10px; /* Padding voor groter klikgebied */
+    font-size: 18px; /* Lettergrootte */
+    border: none; /* Verwijdert de standaard rand */
+    cursor: pointer; /* Verandert de cursor naar een hand-icoon */
+    width: 100%; /* Zorgt dat de knop de volledige breedte inneemt */
+    text-align: center; /* Centreert de tekst in de knop */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 94.5%; /* Zorgt dat de dropdown content de volledige breedte inneemt */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align: center; /* Centreert de tekst in de knop */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #C0D7A6;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    background-color: #C0D7A6; /* Voorbeeld hover kleur voor de knop */
+}
+	  .centered-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:140px; /* Hoogte van het kader */
+    overflow: hidden; /* Om ervoor te zorgen dat de afbeelding binnen het kader blijft */
+  }
+  
+  .centered-link a {
+    text-align: center;
+  }
+  
+  .centered-link img {
+    max-width: 100%; /* Om ervoor te zorgen dat de afbeelding niet breder is dan het kader */
+    max-height: 100%; /* Om ervoor te zorgen dat de afbeelding niet hoger is dan het kader */
+  }
+  .button {
+    display: inline-block;
+    background-color: #C0D7A6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 15px; /* Voeg ruimte toe aan de rechterkant van de knop */
+	margin-bottom: 10px; /* Extra ruimte onder de knop */
+}
+.product-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Vaste breedte */
+    height: 450px; /* Vaste hoogte, aangepast voor ruimte voor afbeelding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item img {
+    max-width: 100%; /* Zorgt dat de afbeelding zich aanpast aan de breedte */
+    height: auto; /* Behoudt de originele hoogte van de afbeelding */
+    margin-bottom: 10px; /* Voegt ruimte toe onder de afbeelding */
+}
+
+.product-item h3 {
+    margin: 5px 0;
+    font-size: 1em; /* Aanpasbare grootte voor betere leesbaarheid */
+}
+
+.product-item p {
+    flex-grow: 1;
+    margin-bottom: 10px; /* Voegt ruimte toe onder de paragraaf */
+    overflow: hidden;
+}
+       .speelse-tekst {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f8f8; 
+            font-family: Arial, sans-serif;
+        }
+
+        .speelse-tekst h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; /* Gebruik het geïmporteerde lettertype */
+        }
+
+        .speelse-tekst p {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+@media screen and (max-width: 600px) {
+
+    nav a {
+        padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
+        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
+    }
+		    .header {
+        padding: 50px 0; /* Verklein de padding van de header */
+    }
+
+    .product-nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropbtn {
+        width: 100%; /* Zorgt dat de knop de volledige breedte inneemt */
+        /* Overige stijlen... */
+    }
+
+    .dropdown-content {
+        width: 100%; /* Zet de breedte gelijk aan die van de dropbtn */
+        position: absolute; 
+        left: 0; /* Uitlijnen met de linkerkant van de container */
+        right: 550; /* Uitlijnen met de rechterkant van de container */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        /* Overige stijlen... */
+    }
+
+	
+	  .centered-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:110px; /* Hoogte van het kader */
+    overflow: hidden; /* Om ervoor te zorgen dat de afbeelding binnen het kader blijft */
+  }
+  
+  .centered-link a {
+    text-align: center;
+  }
+  
+  .centered-link img {
+    max-width: 100%; /* Om ervoor te zorgen dat de afbeelding niet breder is dan het kader */
+    max-height: 100%; /* Om ervoor te zorgen dat de afbeelding niet hoger is dan het kader */
+  }
+}
+
+</style>	
+	
+</head>
+<body>
+    <header class="header">
+      
+    </header>
+
+    <nav>
+        <div>
+          <a href="index.html">Home</a>
+		  <a href="producten.html" class="active">Producten</a>
+          <a href="blog1.html">Blog</a>
+          
+        </div>
+		</nav
+		<nav>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">KeuzeMenu</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="producten.html">Kinderactiviteiten</a>
+                <a href="reis.html">Reisgidsen en kaarten</a>
+				
+                <!-- Meer productlinks -->
+            </div>
+        </div>
+    </nav>
+    
+<div class="speelse-tekst">
+    <h2>Ontdek Onvergetelijke Uitstapjes met ParkVakantieAdvies!</h2>
+    <p>Onze reisgidsen en uitstapboekjes zijn de sleutel tot geweldige avonturen. Laat je inspireren door de leukste bestemmingen en verborgen pareltjes. Klik op de onderstaande links om deze reisgidsen en uitstapboekjes bij Bol.com te vinden:</p>
+</div>
+
+<div class="product-showcase">
+    <div class="product-item">
+        <img src="bucket.jpg" alt="Product 1">
+        <h3>Bucketlist eropuit in Nederland</h3>
+        <p>De mooiste plekjes</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2Fbucketlist-eropuit-in-nederland%2F9300000016762223%2F&name=Bucketlist%20eropuit%20in%20Nederland%2C%20Marleen%20Breke..." class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="hist.jpg" alt="Product 1">
+        <h3>Nederland - kleine historische stadjes</h3>
+        <p>Eropuit in elk seizoen</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fnederland-kleine-historische-stadjes%2F9300000139607528%2F&name=Nederland%20-%20kleine%20historische%20stadjes%2C%20Godfri..." class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="fiets.jpg" alt="Product 1">
+        <h3>Fietsroutes</h3>
+        <p>Allermooiste Fietsroutes van Nederland</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fallermooiste-fietsroutes-van-nederland%2F9300000072076506%2F&name=Allermooiste%20Fietsroutes%20van%20Nederland" class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="1000.jpg" alt="Product 1">
+        <h3>1000 dingen doen</h3>
+        <p>In Nederland</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2F1000-dingen-doen-in-nederland%2F37733889%2F&name=1000%20dingen%20doen%20in%20Nederland%2C%20Jeroen%20van%20der%20Spek" class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="natuur.jpg" alt="Product 1">
+        <h3>Ontdek onze mooiste natuur</h3>
+        <p>de mooiste natuurgebieden</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2Fnederland-ontdek-onze-mooiste-natuur%2F9300000040440535%2F&name=Nederland%20-%20Ontdek%20onze%20mooiste%20natuur%2C%20Marlou..." class="button">Koop Nu</a>
+    </div>
+	    <div class="product-item">
+        <img src="frits.jpg" alt="Product 1">
+        <h3>12 roadtrips door Nederland</h3>
+        <p>Hey Frits en Barts boekje</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fhey-frits-12-roadtrips-door-nederland%2F9300000127522147%2F&name=Hey%20Frits.%2012%20roadtrips%20door%20Nederland%2C%20Manon%20..." class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="rust.jpg" alt="Product 1">
+        <h3>Vakantie in eigen land</h3>
+        <p>Rust & ruimte. Ontdek regio's</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2Fnederland-vakantie-in-eigen-land%2F9300000002916473%2F&name=Nederland%20-%20Vakantie%20in%20eigen%20land%2C%20Marlou%20Jacobs" class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="verliefd.jpg" alt="Product 1">
+        <h3>Verliefd op Nederland</h3>
+        <p>bijzondere plekken</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2Fverliefd-op-nederland%2F9300000071762023%2F&name=Verliefd%20op%20Nederland%2C%20Ro%C3%ABll%20de%20Ram" class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="speelbos.jpg" alt="Product 1">
+        <h3>Speelbossen en familiewandelingen</h3>
+        <p>speciaal voor gezinnen</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Ff%2Fspeelbossen-en-familiewandelingen-in-nederland%2F9300000039216998%2F&name=300%2B%20Speelbossen%20en%20familiewandelingen%20in%20Nede..." class="button">Koop Nu</a>
+    </div>
+	   <div class="product-item">
+        <img src="route.jpg" alt="Product 1">
+        <h3>Toeristische autoroutes Nederland</h3>
+        <p>30 routes in Nederland</p>
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=1360764&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftoeristische-autoroutes-nederland%2F9300000015909629%2F&name=Toeristische%20autoroutes%20Nederland%2C%20ANWB" class="button">Koop Nu</a>
+    </div>
+    <!-- Herhaal voor meer producten -->
+</div>
+<script>
+function toggleDropdown() {
+    if (window.innerWidth <= 600) {
+        var dropdownContent = document.getElementById("dropdownContent");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    }
+}
+</script>
+</body>
+
+
+
+
+
+
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <!-- Mogelijkheid om hier extra inhoud toe te voegen -->
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: parkvakantieadvies@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>
+            &copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.
+            <a href="privacybeleid.html" style="color: white; padding-left: 10px;">Privacybeleid</a>
+            <a href="gebruiksvoorwaarden.html" style="color: white; padding-left: 10px;">Gebruiksvoorwaarden</a>
+        </p>
+			<p>
+		<a href="https://tc.tradetracker.net/?c=27&amp;m=937247&amp;a=466050&amp;r=&amp;u=" target="_blank" rel="sponsored nofollow"><img src="https://ti.tradetracker.net/?c=27&amp;m=122&amp;a=466050&amp;r=&amp;t=html" width="88" height="31" border="0" alt="" /></a>
+		</p>
+    </div>
+</footer>
+
+<!-- Begin TradeTracker SuperTag Code -->
+<script type="text/javascript">
+
+    var _TradeTrackerTagOptions = {
+        t: 'a',
+        s: '466050',
+        chk: 'c822e19faecda1f00c2cdeb4999d2bed',
+        overrideOptions: {}
+    };
+
+    (function() {var tt = document.createElement('script'), s = document.getElementsByTagName('script')[0]; tt.setAttribute('type', 'text/javascript'); tt.setAttribute('src', (document.location.protocol == 'https:' ? 'https' : 'http') + '://tm.tradetracker.net/tag?t=' + _TradeTrackerTagOptions.t + '&amp;s=' + _TradeTrackerTagOptions.s + '&amp;chk=' + _TradeTrackerTagOptions.chk); s.parentNode.insertBefore(tt, s);})();
+</script>
+<!-- End TradeTracker SuperTag Code -->
+
+</html>
