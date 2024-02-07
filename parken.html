@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ontdek en boek uw perfecte vakantiepark met ParkVakantieAdvies. Vind parken voor natuurwandelingen, waterpret, wellnessfaciliteiten en meer.">
+    <meta name="keywords" content="vakantieparken, vakantiehuizen, natuurparken, waterparken, wellness, vakantie in Nederland">
+    <meta name="author" content="ParkVakantieAdvies">
+    <meta property="og:title" content="ParkVakantieAdvies - Vind uw ideale vakantiepark">
+    <meta property="og:description" content="De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!">
+    <meta property="og:image" content="url_naar_een_afbeelding_van_jouw_site">
+    <meta property="og:url" content="url_van_jouw_website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ParkVakantieAdvies - Vind uw ideale vakantiepark">
+    <meta name="twitter:description" content="De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!">
+    <meta name="twitter:image" content="url_naar_een_afbeelding_van_jouw_site">
+    <title>Parken</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-image: url('header5.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Centreert de items horizontaal */
+            align-items: center;
+            padding: 20px 40px;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        nav a:hover {
+            background-color: #C0D7A6;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #333;
+			text-align: center;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+.park-selectie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.park {
+    width: calc(33% - 40px);
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex; /* Toegevoegd */
+    flex-direction: column; /* Toegevoegd */
+    text-align: center; /* Toegevoegd */
+}
+
+.park img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
+}
+
+.park-info {
+    padding: 15px;
+}
+        .filter-opties {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .filter-opties button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            background-color: #C0D7A6;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .filter-opties button:hover {
+            background-color: #A9B48A;
+        }
+@media (max-width: 600px) {
+    .park {
+        width: calc(100% - 40px); /* Aanpassing om parken de volledige breedte te geven op kleinere schermen */
+    }
+    .filter-opties {
+        flex-direction: column;
+        align-items: center; /* De knoppen in het midden uitlijnen */
+    }
+    .filter-opties button {
+        margin: 0 10px 10px; /* Marge toevoegen aan de onderkant van de knoppen */
+        width: 150%; /* Breedte van de knoppen aanpassen voor betere weergave */
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+    </header>
+
+    <nav>
+        <div>
+         <a href="index.html">Home</a>
+         <a href="parken.html" class="active">Parken</a>
+         <a href="blog1.html">Blog</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Kies uw perfecte vakantiepark</h1>
+        <div class="filter-opties">
+            <button onclick="filter('Alle')">Alle</button>
+            <button onclick="filter('Bos')">Natuurwandelingen</button>
+            <button onclick="filter('Dieren')">Dierenontmoetingen</button>
+			<button onclick="filter('Zwem')">Waterpret</button>
+			<button onclick="filter('Well')">Wellnessfaciliteiten</button>
+			
+            <!-- Voeg meer knoppen toe voor andere filters -->
+        </div>
+		
+        <div class="park-selectie">
+            <!-- Voorbeeld parken, vervang met echte data -->
+    <div class="park" data-category="Bos Dieren">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a href="https://www.dierenbos.nl/ttnl/?tt=23281_951324_466050_&r=" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=23281&amp;m=2312828&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Dierenbos</h3>
+        <p>Verken het Dierenbos Park, waar de natuurlijke pracht en rust samenkomen.</p>
+    </div>
+</div>
+    <div class="park" data-category="Dieren">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a href="https://www.beeksebergen.nl/vakantiepark/ttnl/?tt=23280_1161014_466050_&amp;r=" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=23280&amp;m=1161014&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Beekse Bergen</h3>
+        <p>Ontdek Beekse Bergen, waar de majestueuze natuur en serene rust samenkomen in perfecte harmonie.</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzeeland%2Fwater-village%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Water Village</h3>
+        <p>in Kamperland, Zeeland, staat bekend om zijn eco-vriendelijke en luxe accommodaties.</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Flimburg-nl%2Froompot-gulpen%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Gulpen</h3>
+        <p>Het park ligt dicht bij Maastricht en is een rustige uitvalsbasis voor wandelingen in de natuur van het Gulpdal</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos Zwem Well">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a  href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzeeland%2Fbeach-resort-nieuwvliet-bad%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Beach Resort Nieuwvliet-Bad</h3>
+        <p>Zeeland is ideaal voor strandliefhebbers en biedt naast strandplezier ook prachtige natuurgebieden om te wandelen</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a  href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Flimburg-nl%2Fresort-arcen%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Resort Arcen</h3>
+        <p>Gelegen in Noord-Limburg, is omgeven door heide en bossen van Nationaal Park De Maasduinen</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a   href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fnoord-holland%2Fmarinapark-volendam%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Marinapark Volendam</h3>
+        <p>Biedt een authentieke Nederlandse ervaring met huisjes in Volendamse stijl en uitzicht op het IJsselmeer.</p>
+    </div>
+</div>
+    <div class="park" data-category="Bos">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a    href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fnoord-holland%2Fmarinapark-volendam%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Cuber Veluwe</h3>
+        <p> In Gelderland biedt een unieke verblijfervaring met luxe outdoor suites midden in de Veluwe.</p>
+    </div>
+</div>
+
+    <div class="park" data-category="Dieren">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a     href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzeeland%2Fzeebad%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Vakantiepark Zeebad</h3>
+        <p>Gelegen in Breskens, Zeeland, biedt dit park verschillende faciliteiten, waaronder een kinderboerderij waar gasten dieren kunnen zien.</p>
+    </div>
+</div>
+
+    <div class="park" data-category="Dieren">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a    href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fnoord-brabant%2Fde-katjeskelder%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Vakantiepark De Katjeskelder</h3>
+        <p>Gelegen in Oosterhout, Noord-Brabant, heeft dit park een kinderboerderij waar kinderen kunnen genieten van de aanwezige dieren.</p>
+    </div>
+</div>
+
+    <div class="park" data-category="Dieren Well">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a      href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzuid-holland%2Fvakantiepark-kijkduin%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Vakantiepark Kijkduin</h3>
+        <p>Dit park is gelegen in Den Haag, Zuid-Holland, en heeft een kinderboerderij.</p>
+    </div>
+</div>
+    <div class="park" data-category="Zwem">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a       href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzeeland%2Fparc-aquadelta%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Vakantiepark Aquadelta</h3>
+        <p>Dit vakantiepark ligt in Bruinisse, Zeeland, en beschikt over een overdekt zwembad met glijbanen, een wildwaterbaan en andere waterattracties.</p>
+    </div>
+</div>
+    <div class="park" data-category="Zwem">
+    <!-- Affiliate afbeelding gebruikt als de hoofdafbeelding voor het park -->
+    <a        href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fdrenthe%2Fvakantiepark-hunzedal%2F" target="_blank" rel="sponsored nofollow">
+        <img src="https://ti.tradetracker.net/?c=283&amp;m=1746501&amp;a=466050&amp;r=&amp;t=html" width="300" height="250" border="0" alt="Park aan Zee" />
+    </a>
+    <div class="park-info">
+        <h3>Roompot Vakantiepark Hunzedal</h3>
+        <p>Dit park in Borger, Drenthe, heeft een binnenzwembad met glijbanen, een wildwaterbaan en een peuterbad, evenals een buitenzwembad voor warme dagen.</p>
+    </div>
+</div>
+   
+
+
+
+
+
+
+
+ </div>
+</div>
+<footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <!-- Mogelijkheid om hier extra inhoud toe te voegen -->
+        </div>
+        <div class="footer-section" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 20px;">Contact</h3>
+            <p>Email: parkvakantieadvies@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
+        <p>
+            &copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.
+            <a href="privacybeleid.html" style="color: white; padding-left: 10px;">Privacybeleid</a>
+            <a href="gebruiksvoorwaarden.html" style="color: white; padding-left: 10px;">Gebruiksvoorwaarden</a>
+        </p>
+			<p>
+		<a href="https://tc.tradetracker.net/?c=27&amp;m=937247&amp;a=466050&amp;r=&amp;u=" target="_blank" rel="sponsored nofollow"><img src="https://ti.tradetracker.net/?c=27&amp;m=122&amp;a=466050&amp;r=&amp;t=html" width="88" height="31" border="0" alt="" /></a>
+		</p>
+    </div>
+</footer>
+    <script>
+function filter(categorie) {
+    var parken = document.getElementsByClassName('park');
+    for (var i = 0; i < parken.length; i++) {
+        var categories = parken[i].getAttribute('data-category').split(' ');
+        if (categorie === 'Alle' || categories.includes(categorie)) {
+            parken[i].style.display = '';
+        } else {
+            parken[i].style.display = 'none';
+        }
+    }
+}
+    </script>
+</body>
+</html>
