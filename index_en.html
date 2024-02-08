@@ -14,7 +14,7 @@
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ontdek de Beste Vakantieparken in Nederland | ParkVakantieAdvies</title>
-    <meta name="description" content="Welkom bij ParkVakantieAdvies. Uw gids voor de beste vakantieparken in Nederland. Ontdek gedetailleerde beoordelingen, spannende blogs en de perfecte vakantiebestemming voor u en uw gezin.">
+	<meta name="description" content="Discover the best holiday parks in the Netherlands with ParkVakantieAdvies. Explore detailed reviews, engaging blogs, and find the perfect vacation destination for you and your family. Whether you're looking for dog-friendly options, indoor swimming pools, beach holidays, or family-friendly accommodations, we have you covered. Plan your dream vacation with our expert advice and insider tips today!">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <style>
 	
@@ -153,8 +153,6 @@ nav a:hover {
         border-radius: 10px; /* Afgeronde hoeken voor een speels effect */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtiele schaduw voor diepte */
     }
-
-
 #languageSelector {
     position: fixed;
     top: 20px;
@@ -321,13 +319,13 @@ nav a:hover {
     
     </header>
 
-    <nav>
-        <div>
-          <a href="index.html">Home</a>
-		  <a href="parken.html" class="active">Parken</a>
-          <a href="blog1.html">Blog</a>
-          
-        </div>
+<nav>
+    <div>
+        <a href="index_en.html">Home</a>
+        <a href="parken_en.html" class="active">Holiday Parks</a>
+        <a href="blog1_en.html">Blog</a>
+    </div>
+</nav>
        
     </nav>
 	
@@ -342,39 +340,39 @@ nav a:hover {
 
     <div class="speelse-tekst">
 	
-    <h2>Ontdek, Ontspan, Geniet met ParkVakantieAdvies!</h2>
-    <p>Laat je inspireren door onze verhalen en tips voor jouw droomreis.</p>
+    <h2>Discover, Relax, Enjoy with ParkVakantieAdvies!</h2>
+    <p>Be inspired by our stories and tips for your dream vacation.</p>
 </div>
 <!-- Sectie voor afbeeldingen met links -->
 <div class="afbeeldingen-rij">
     <a href="BosrijkeVakantie.html">
         <div class="afbeelding-container">
             <img src="bos.jpg" alt="Beschrijving1">
-            <p class="afbeelding-tekst">Bosrijke Vakantie</p>
+            <p class="afbeelding-tekst">Wooded Holiday</p>
         </div>
     </a>
     <a href="HondVriendelijkVakantie.html">
         <div class="afbeelding-container">
             <img src="afbeelding2.jpg" alt="Beschrijving2">
-            <p class="afbeelding-tekst">Hond Vriendelijke Vakantie</p>
+            <p class="afbeelding-tekst">Dog-Friendly Holiday</p>
         </div>
     </a>
 	  <a href="BinnenZwembaden.html">
         <div class="afbeelding-container">
             <img src="afbeelding5.jpg" alt="Beschrijving2">
-            <p class="afbeelding-tekst">BinnenZwembaden</p>
+            <p class="afbeelding-tekst">Indoor Swimming Pools</p>
         </div>
     </a>
 	  <a href="StrandVakantie.html">
         <div class="afbeelding-container">
             <img src="afbeelding3.jpg" alt="Beschrijving2">
-            <p class="afbeelding-tekst">Strand Vakantie</p>
+            <p class="afbeelding-tekst">Beach Holiday</p>
         </div>
     </a>
 	  <a href="KindVriendelijkeVakantie.html">
         <div class="afbeelding-container">
             <img src="afbeelding4.jpg" alt="Beschrijving2">
-            <p class="afbeelding-tekst">Kindvriendelijke Vakantie</p>
+            <p class="afbeelding-tekst">Family-Friendly Holiday</p>
         </div>
     </a>
     <!-- Herhaal voor andere afbeeldingen -->
@@ -386,8 +384,8 @@ nav a:hover {
         <div class="slide" style="background-image: url('blog.jpg');">
     <a href="blog1.html" class="slide-link">
         <div class="slide-inhoud">
-            <h2>Laatste Nieuws</h2>
-            <p>Lees ons laatste avontuur</p>
+            <h2>Latest News</h2>
+            <p>Read our latest adventure</p>
         </div>
     </a>
 </div>
@@ -395,43 +393,43 @@ nav a:hover {
 		    <div class="slide" style="background-image: url('schrijven.jpg');">
     <a href="blog1.html" class="slide-link">
         <div class="slide-inhoud">
-            <h2>Laatste Nieuws</h2>
-            <p>Lees ons laatste avontuur</p>
+            <h2>Latest News</h2>
+            <p>Read our latest adventure</p>
         </div>
     </a>
 </div>
         </div>
 <!-- Vakantie -->
 <div class="school-vakantie-kalender">
-    <h2>Schoolvakanties Nederland 2024</h2>
+    <h2>School Holidays Netherlands 2024</h2>
     <div class="regio-selectie">
-        <div class="regio noord" onclick="vulVakantieData('noord')">Noord</div>
-        <div class="regio midden" onclick="vulVakantieData('midden')">Midden</div>
-        <div class="regio zuid" onclick="vulVakantieData('zuid')">Zuid</div>
+        <div class="regio noord" onclick="vulVakantieData('noord')">North</div>
+        <div class="regio midden" onclick="vulVakantieData('midden')">Middle</div>
+        <div class="regio zuid" onclick="vulVakantieData('zuid')">South</div>
     </div>
     <table>
         <tr>
-            <th>Vakantie</th>
-            <th>Datum</th>
+            <th>Vacation</th>
+            <th>Date</th>
         </tr>
         <tr>
-            <td>Voorjaarsvakantie</td>
+            <td>Spring Break</td>
             <td id="voorjaar"></td>
         </tr>
         <tr>
-            <td>Meivakantie</td>
+            <td>May Holiday</td>
             <td id="mei"></td>
         </tr>
         <tr>
-            <td>Zomervakantie</td>
+            <td>Summer Holiday</td>
             <td id="zomer"></td>
         </tr>
         <tr>
-            <td>Herfstvakantie</td>
+            <td>Autumn Break</td>
             <td id="herfst"></td>
         </tr>
         <tr>
-            <td>Kerstvakantie</td>
+            <td>Christmas Holiday</td>
             <td id="kerst"></td>
         </tr>
     </table>
@@ -440,20 +438,20 @@ nav a:hover {
 
 <!-- Sectie voor speelse maar moderne tekst -->
 <div class="moderne-tekst-sectie">
-    <h2>Jouw Reisavontuur Wacht Op Jou!</h2>
-    <p>Ontdek geweldige vakantieparken in Nederland en maak je volgende avontuur onvergetelijk!</p>
+    <h2>Your Travel Adventure Awaits You!</h2>
+    <p>Discover amazing holiday parks in the Netherlands and make your next adventure unforgettable!</p>
     <div class="tekst-blokken">
         <div class="tekst-blok">
-            <h3>VakantieJoy!</h3>
-            <p>Jouw Gids voor een Perfecte Vakantie in Nederlandse Vakantieparken: Must-See Bestemmingen en Insider Tips!</p>
+            <h3>VacationJoy!</h3>
+            <p>Your Guide to a Perfect Vacation in Dutch Holiday Parks: Must-See Destinations and Insider Tips!</p>
         </div>
         <div class="tekst-blok">
-            <h3>Bestemmingen</h3>
-            <p>Ontdek verborgen pareltjes en populaire hotspots die je niet mag missen.</p>
+            <h3>Destinations</h3>
+            <p>Discover hidden gems and popular hotspots you shouldn't miss.</p>
         </div>
         <div class="tekst-blok">
-            <h3>Ervaring!</h3>
-            <p>De Wereld door Onze Ogen: Avonturen van Ons Gezin en Inspiratie voor Jouw Eigen Reis!</p>
+            <h3>Experience!</h3>
+            <p>The World Through Our Eyes: Adventures of Our Family and Inspiration for Your Own Journey!</p>
         </div>
     </div>
 
@@ -519,8 +517,8 @@ function vulVakantieData(regio) {
 <footer style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
     <div class="footer-content" style="max-width: 1200px; margin: auto; padding: 0 20px;">
         <div class="footer-section" style="margin-bottom: 20px;">
-            <h3 style="margin-bottom: 20px;">Over ParkVakantieAdvies</h3>
-            <p style="margin-bottom: 20px; line-height: 1.6;">De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!</p>
+            <h3 style="margin-bottom: 20px;">About ParkVakantieAdvies</h3>
+            <p style="margin-bottom: 20px; line-height: 1.6;">The ultimate guide to your perfect holiday park experience. Discover new destinations, read captivating stories, and plan your next adventure with us!</p>
         </div>
         <div class="footer-section" style="margin-bottom: 20px;">
             <!-- Mogelijkheid om hier extra inhoud toe te voegen -->
@@ -532,10 +530,10 @@ function vulVakantieData(regio) {
     </div>
     <div class="footer-bottom" style="border-top: 1px solid #444; padding-top: 20px;">
         <p>
-            &copy; 2024 ParkVakantieAdvies. Alle rechten voorbehouden.
-            <a href="privacybeleid.html" style="color: white; padding-left: 10px;">Privacybeleid</a>
-            <a href="gebruiksvoorwaarden.html" style="color: white; padding-left: 10px;">Gebruiksvoorwaarden</a>
-			<a href="overons1.html" style="color: white; padding-left: 10px;">Over Ons</a>
+            &copy; 2024 ParkVakantieAdvies. All rights reserved.
+            <a href="privacybeleid.html" style="color: white; padding-left: 10px;">Privacy Policy</a>
+            <a href="gebruiksvoorwaarden.html" style="color: white; padding-left: 10px;">Terms of Use</a>
+			<a href="overons1.html" style="color: white; padding-left: 10px;">About Us</a>
 			
         </p>
 			<p>
@@ -582,7 +580,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var languageOptions = {
     "index.html": "Nederlands",
     "index_en.html": "English"
-
   };
   
   // Bepaal de huidige pagina en stel de taalkeuze in
@@ -594,9 +591,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Event Listener voor het wijzigen van de taal
   selector.addEventListener('change', function() {
-    window.location.href = this.value; // Navigeer naar de geselecteerde optie waarde
+    window.location.href = this.value;
   });
 });
 </script>
