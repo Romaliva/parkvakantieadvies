@@ -15,6 +15,7 @@
     <meta name="twitter:description" content="De ultieme gids voor jouw perfecte vakantiepark ervaring. Ontdek nieuwe bestemmingen, lees boeiende verhalen en plan je volgende avontuur met ons!">
     <meta name="twitter:image" content="url_naar_een_afbeelding_van_jouw_site">
     <title>Parken</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -110,10 +111,40 @@
         .filter-opties button:hover {
             background-color: #A9B48A;
         }
+		        /* Inhoud Stijlen */
+        .content {
+            padding: 20px;
+        }
+       .speelse-tekst {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f8f8; 
+            font-family: Arial, sans-serif;
+        }
+
+        .speelse-tekst h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; /* Gebruik het geïmporteerde lettertype */
+        }
+
+        .speelse-tekst p {
+            color: #666;
+            font-size: 1.2em;
+        }
 @media (max-width: 600px) {
     .park {
         width: calc(100% - 40px); /* Aanpassing om parken de volledige breedte te geven op kleinere schermen */
     }
+	    nav a {
+        padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
+        font-size: 18px; /* Vergroot de lettergrootte voor betere leesbaarheid */
+    }
+			    .header {
+        padding: 50px 0; /* Verklein de padding van de header */
+    }
+
     .filter-opties {
         flex-direction: column;
         align-items: center; /* De knoppen in het midden uitlijnen */
@@ -121,6 +152,10 @@
     .filter-opties button {
         margin: 0 10px 10px; /* Marge toevoegen aan de onderkant van de knoppen */
         width: 150%; /* Breedte van de knoppen aanpassen voor betere weergave */
+    }
+	.content, .speelse-tekst, .moderne-tekst-sectie, .tekst-blok {
+        padding: 20px 10px; /* Pas padding aan voor kleinere schermen */
+		
     }
 }
     </style>
@@ -136,9 +171,13 @@
          <a href="blog1.html">Blog</a>
         </div>
     </nav>
+<div class="speelse-tekst">
+    <h2>Welkom bij ParkVakantieAdvies!</h2>
+    <p>Laat je inspireren en vind jouw perfecte vakantiebestemming hier!</p>
+</div>
 
     <div class="container">
-        <h1>Kies uw perfecte vakantiepark</h1>
+     
         <div class="filter-opties">
             <button onclick="filter('Alle')">Alle</button>
             <button onclick="filter('Bos')">Natuurwandelingen</button>

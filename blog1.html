@@ -16,7 +16,8 @@
     <title>Ontdek Diverse Parken in Nederland | ParkVakantieAdvies Blog</title>
     <meta name="description" content="Lees onze blog voor een uniek inzicht in diverse vakantieparken in Nederland. Van rustige natuurparken tot levendige recreatiegebieden, vind jouw perfecte vakantiebestemming.">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stijl.css"> <!-- Externe CSS-link als voorbeeld -->
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+	
 </head>
 
 <style>
@@ -37,7 +38,28 @@ body {
     padding: 150px 0;
 }
 
+        /* Inhoud Stijlen */
+        .content {
+            padding: 20px;
+        }
+       .speelse-tekst {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f8f8; 
+            font-family: Arial, sans-serif;
+        }
 
+        .speelse-tekst h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; /* Gebruik het geïmporteerde lettertype */
+        }
+
+        .speelse-tekst p {
+            color: #666;
+            font-size: 1.2em;
+        }
 
 
 
@@ -163,6 +185,10 @@ nav a:hover {
         width: 81%; /* Volledige breedte op kleinere schermen */
         margin-top: 20px; /* Ruimte boven de sidebar op kleinere schermen */
     }
+	    .content, .speelse-tekst, .moderne-tekst-sectie, .tekst-blok {
+        padding: 20px 10px; /* Pas padding aan voor kleinere schermen */
+		
+    }
 }
 
 	</style>
@@ -178,8 +204,13 @@ nav a:hover {
           <a href="blog1.html">Blog</a>
           
         </div>
+		
        
     </nav>
+<div class="speelse-tekst">
+    <h2>Welkom bij het ParkVakantieAdvies Blog!</h2>
+    <p>Laat je inspireren door onze avonturen en ontdek de verborgen pareltjes van diverse parken in Nederland.</p>
+</div>
 	    <div class="container">
         <main class="blog-content">
    <section>
