@@ -28,7 +28,6 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Lichtgrijze achtergrond voor de hele pagina */
 }
-
 .header {
     background-image: url('header5.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
     background-size: cover;
@@ -37,10 +36,6 @@ body {
     text-align: center;
     padding: 150px 0;
 }
-
-
-
-
 
 
 
@@ -127,6 +122,31 @@ nav a:hover {
     background-color: #C0D7A6;
     color: white;
 }
+.affiliate-btn {
+    display: inline-block;
+    background-color: #C0D7A6; /* Achtergrondkleur van de knop */
+    color: white; /* Tekstkleur */
+    padding: 10px 20px; /* Padding rond de tekst */
+    border-radius: 5px; /* Ronde hoeken */
+    text-decoration: none; /* Geen onderstreping */
+    font-size: 16px; /* Tekstgrootte */
+    font-family: 'Arial', sans-serif; /* Lettertype */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Gladde hover overgang */
+}
+.blog-footer {
+    text-align: center; /* Centreert de inhoud van de div */
+    margin: 20px 0; /* Voegt wat ruimte toe boven en onder de div */
+}
+.affiliate-btn:hover {
+    background-color: #9eb482; /* Donkerdere achtergrondkleur bij hover */
+    color: #ffffff; /* Tekstkleur bij hover */
+}
+.advertentie-container {
+    position: -webkit-sticky; /* Voor Safari */
+    position: sticky;
+    top: 0; /* Afstand van de bovenkant van het viewport; pas aan indien nodig */
+    align-self: flex-start; /* Voor gebruik binnen flex containers */
+}
  @media screen and (max-width: 600px) {
     nav a {
         padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
@@ -159,6 +179,9 @@ nav a:hover {
     .sidebar {
         width: 90%; /* Volledige breedte op kleinere schermen */
     }
+	    .advertentie-container {
+        display: none;
+    }
 
     .sidebar {
         width: 81%; /* Volledige breedte op kleinere schermen */
@@ -170,7 +193,7 @@ nav a:hover {
 	</style>
 <body>
     <header class="header">
-      
+     
     </header>
 
     <nav>
@@ -183,6 +206,9 @@ nav a:hover {
        
     </nav>
     <div class="container">
+			<div class="advertentie-container">
+<a href="https://www.roompot.nl/tradetracker/?tt=283_1837392_466050_&amp;r=" target="_blank" rel="sponsored nofollow"><img src="https://ti.tradetracker.net/?c=283&amp;m=1837392&amp;a=466050&amp;r=&amp;t=html" width="120" height="600" border="0" alt="" /></a>
+</div>
         <main class="blog-content">
      <article>
 
@@ -203,7 +229,9 @@ nav a:hover {
 <p>Mijn verblijf in Roompot Bos en Duin was een verkwikkende ervaring in de natuur. De combinatie van rust, natuurlijke schoonheid en activiteiten maakte mijn vakantie zowel ontspannend als inspirerend. Roompot Bos en Duin is de ideale bestemming voor iedereen die op zoek is naar een betoverend bosrijk avontuur in Nederland.</p>
 <h2>Afsluiting:</h2>
 <p>Ik hoop dat deze blog jullie heeft geïnspireerd om zelf Roompot Bos en Duin te verkennen en te genieten van al het moois dat dit prachtige vakantiepark te bieden heeft. Als je vragen hebt of meer informatie wilt, aarzel dan niet om een reactie achter te laten. Tot de volgende keer in de betoverende natuur!</p>
-			
+	<div class="blog-footer">
+    <a  href="https://www.roompot.nl/tradetracker/?tt=283_12_466050_&amp;r=%2Fbestemmingen%2Fnederland%2Fzeeland%2Fbos-en-duin%2F"  target="_blank" class="affiliate-btn" rel="sponsored nofollow">Roompot Bos en Duin</a>
+</div> 			
        </article>
             <!-- Andere artikelen -->
         </main>

@@ -28,7 +28,6 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Lichtgrijze achtergrond voor de hele pagina */
 }
-
 .header {
     background-image: url('header5.jpg'); /* Vervang 'header.jpg' door je eigen afbeeldingslink */
     background-size: cover;
@@ -37,10 +36,6 @@ body {
     text-align: center;
     padding: 150px 0;
 }
-
-
-
-
 
 
 
@@ -127,6 +122,12 @@ nav a:hover {
     background-color: #C0D7A6;
     color: white;
 }
+.advertentie-container {
+    position: -webkit-sticky; /* Voor Safari */
+    position: sticky;
+    top: 0; /* Afstand van de bovenkant van het viewport; pas aan indien nodig */
+    align-self: flex-start; /* Voor gebruik binnen flex containers */
+}
  @media screen and (max-width: 600px) {
     nav a {
         padding: 15px 20px; /* Vergroot de padding voor betere aanklikbaarheid */
@@ -159,6 +160,9 @@ nav a:hover {
     .sidebar {
         width: 90%; /* Volledige breedte op kleinere schermen */
     }
+	    .advertentie-container {
+        display: none;
+    }
 
     .sidebar {
         width: 81%; /* Volledige breedte op kleinere schermen */
@@ -183,6 +187,9 @@ nav a:hover {
        
     </nav>
     <div class="container">
+			<div class="advertentie-container">
+<a href="https://www.roompot.nl/tradetracker/?tt=283_1837392_466050_&amp;r=" target="_blank" rel="sponsored nofollow"><img src="https://ti.tradetracker.net/?c=283&amp;m=1837392&amp;a=466050&amp;r=&amp;t=html" width="120" height="600" border="0" alt="" /></a>
+</div>
         <main class="blog-content">
      <article>
 
